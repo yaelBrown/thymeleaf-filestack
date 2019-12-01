@@ -1,0 +1,21 @@
+    <div class="field" id="photo">
+      <div>
+        <input type="hidden" id="filestackAPI" name="filestackAPI" th:value="${filestackAPI}" />
+      <div class="file">
+        <label class="file-label">
+          <input id="picker" class="file-input" type="file" name="resume" />
+          <input type="hidden" id="fileupload" name="file" />
+          <span class="file-cta">
+                <span class="file-icon">
+                  <i class="fas fa-camera-retro"></i>
+                </span>
+                <span class="file-label">
+                  Upload a Photo
+                </span>
+                </span>
+        </label>
+      </div>
+      <div id="nameBox"></div>
+
+      <th:block th:replace="fragments/filestack" />
+    </div>
